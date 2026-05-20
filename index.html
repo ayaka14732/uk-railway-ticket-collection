@@ -94,6 +94,7 @@
     <ol class="table-notes">
       <li>The Train Tickets listed in the ToD section are all of the Ticket on Departure (ToD) type, meaning they were purchased online and collected at a Ticket Vending Machine (TVM). Other purchase methods (e.g. buying directly at the station) are not covered here.</li>
       <li>Operator refers to the operator labelled on the Ticket Vending Machine (TVM), which may differ from the station's managing operator. For example, London Victoria is managed by Network Rail, but its TVMs include those branded Southern and Southeastern.</li>
+      <li>Stansted Express is not a train operator, but a service operated by Greater Anglia. Its TVMs and ticket office staff are operated by Greater Anglia.</li>
       <li>Entries marked <em>Ticket Office</em> indicate the ticket was collected from a staffed ticket office window, not a TVM.</li>
       <li>Type 6 and type 9 use a similar font style, but the digits <em>3</em>, <em>6</em> and <em>9</em> are written differently.</li>
       <li>Type 8 is a reserved number, and no sample is currently available.</li>
@@ -195,6 +196,8 @@
       "LNER": "ce0e2d",
       "London Northwestern Railway": "00bf6f",
       "London Overground": "e87722",
+      // Unconfirmed. Inferred from https://londonsouthendairport.com/wp-content/themes/lsa/assets/icons/512x512.svg?ver=1.4.10
+      "London Southend Airport": "57bee5",
       "Lumo": "2b6ef5",
       "Merseyrail": "fff200",
       "Northern": "0f0d78",
@@ -202,7 +205,6 @@
       "South Western Railway": "24398c",
       "Southeastern": "389cff",
       "Southern": "8cc63e",
-      "Stansted Express": "6b717a",
       "Thameslink": "ff5aa4",
       "TransPennine Express": "09a4ec",
       "Transport for Wales": "ff0000",
@@ -289,7 +291,8 @@
         { station: "London Paddington", ticket: "tickets/0046.jpg", receipt: "tickets/0047.jpg", type: "2" }
       ]},
       { operator: "Greater Anglia", rows: [
-        { station: "London Liverpool Street", ticket: "tickets/0014.jpg", receipt: "No receipt provided", type: "2" }
+        { station: "London Liverpool Street", ticket: "tickets/0014.jpg", receipt: "No receipt provided", type: "2" },
+        { station: "Stansted Airport (Ticket Office)", ticket: "tickets/0091.jpg", receipt: "Thermal Paper Receipt", type: "9" }
       ]},
       { operator: "Heathrow Express", rows: [
         { station: "Heathrow Terminals 2 & 3", ticket: "tickets/0033.jpg", receipt: "tickets/0034.jpg", type: "7" },
