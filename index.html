@@ -208,6 +208,8 @@
       "Southern": "8cc63e",
       "Thameslink": "ff5aa4",
       "TransPennine Express": "09a4ec",
+      // Deducted from the website
+      "Transport for London": "081ea8",
       "Transport for Wales": "ff0000",
       "West Midlands Trains": "ff8300",
     };
@@ -275,9 +277,6 @@
         { station: { text: "London St Pancras International", note: "unusual format" }, ticket: "tickets/0039.jpg", receipt: "tickets/0040.jpg", type: "1" },
         { station: "Leicester", ticket: "tickets/0017.jpg", receipt: "tickets/0018.jpg", type: "2" }
       ]},
-      { operator: "Elizabeth Line", rows: [
-        { station: "Canary Wharf", ticket: "tickets/0035.jpg", receipt: "tickets/0036.jpg", type: "7" }
-      ]},
       { operator: "Gatwick Express", rows: [
         { station: "Gatwick Airport", ticket: "", receipt: "", type: "" }
       ]},
@@ -297,8 +296,7 @@
         { station: "Stansted Airport (Ticket Office)", ticket: "tickets/0091.jpg", receipt: "Thermal Paper Receipt", type: "9" }
       ]},
       { operator: "Heathrow Express", rows: [
-        { station: "Heathrow Terminals 2 & 3", ticket: "tickets/0033.jpg", receipt: "tickets/0034.jpg", type: "7" },
-        { station: { text: "London Paddington", note: "NLC 5976 suggests Heathrow Express, but cannot confirm from memory" }, ticket: "tickets/0037.jpg", receipt: "tickets/0038.jpg", type: "5" }
+        { station: "Heathrow Terminals 2 & 3", ticket: "tickets/0037.jpg", receipt: "tickets/0038.jpg", type: "5" }
       ]},
       { operator: "Hull Trains", rows: [
         { station: "N/A", ticket: "N/A", receipt: "N/A", type: "" }
@@ -347,6 +345,9 @@
       ]},
       { operator: "TransPennine Express", rows: [
         { station: "Manchester Airport", ticket: "tickets/0041.jpg", receipt: "No receipt (or missing?)", type: "9" }
+      ]},
+      { operator: "Transport for London", rows: [
+        { station: "Heathrow Terminals 2 & 3", ticket: "tickets/0033.jpg", receipt: "tickets/0034.jpg", type: "7" }
       ]},
       { operator: "Transport for Wales", rows: [
         { station: "", ticket: "", receipt: "", type: "" }
@@ -442,7 +443,7 @@
       { operator: "Chiltern Railways", ticket: "tickets/0066.jpg", postage: "tickets/0067.jpg", type: "12" },
       { operator: "CrossCountry", ticket: "tickets/0013.jpg", postage: "tickets/0063.jpg", type: "11" },
       { operator: "East Midlands Railway", ticket: "tickets/0072.jpg", postage: "tickets/0073.jpg", type: "11" },
-      { operator: "Elizabeth Line", ticket: "N/A", postage: "N/A", type: "" },
+      { operator: "Transport for London", ticket: "N/A", postage: "N/A", type: "" },
       { operator: "Gatwick Express", ticket: "tickets/0080.jpg", postage: "tickets/0081.jpg", type: "12b" },
       { operator: "Grand Central", ticket: "tickets/0078.jpg", postage: "tickets/0079.jpg", type: "12" },
       { operator: "Great Northern", ticket: "Presumed identical to Gatwick Express", postage: "", type: "" },
@@ -512,7 +513,6 @@
       { operator: "Avanti West Coast", station: "London Euston", receipt: "White Thermal Paper Receipt" },
       { operator: "CrossCountry", station: "N/A", receipt: "N/A" },
       { operator: "East Midlands Railway", station: "London St Pancras International", receipt: "tickets/0060.jpg" },
-      { operator: "Elizabeth Line", station: "London Paddington", receipt: "White Thermal Paper Receipt" },
       { operator: "Great Northern", station: "London Kings Cross", receipt: "tickets/0058.jpg" },
       { operator: "Greater Anglia", station: "Tottenham Hale", receipt: "White Paper Receipt with Orange Bands" },
       { operator: "Greater Anglia", station: "Cheshunt", receipt: "tickets/0057.jpg" },
@@ -521,7 +521,8 @@
       { operator: "Southeastern", station: "London Victoria", receipt: "tickets/0049.jpg" },
       { operator: "Southern", station: "London Victoria", receipt: "tickets/0048.jpg" },
       { operator: "South Western Railway", station: "Wandsworth Town", receipt: "tickets/0056.jpg" },
-      { operator: "Thameslink", station: "London St Pancras International", receipt: "tickets/0059.jpg" }
+      { operator: "Thameslink", station: "London St Pancras International", receipt: "tickets/0059.jpg" },
+      { operator: "Transport for London", station: "London Paddington", receipt: "White Thermal Paper Receipt" }
     ];
 
     function buildSalesReceiptTable(data) {
